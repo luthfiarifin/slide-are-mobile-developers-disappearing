@@ -21,7 +21,7 @@ Part of [luthfiarifin/research](https://github.com/luthfiarifin/research) (linke
 | 07 | Evidence: what companies are hiring for | S16 screenshot cards |
 | 08 | If I were learning mobile today… | S05 layers |
 | 09 | The definition is expanding (closing) | Split closing |
-| 10 | Questions? | S12 manifesto + banner |
+| 10 | Questions? + QR to laam.my.id/talks/are-mobile-developers-disappearing | S12 manifesto + banner |
 
 ## Presenting
 
@@ -33,6 +33,8 @@ Open `index.html` in a browser (no server needed).
 | `Esc` | Slide overview |
 | `P` | Presenter view: notes, timer, next slide, audience window sync |
 | `B` | Static (low-power) mode, no animations |
+
+The on-screen shortcut hint is hidden for a clean stage; the keys above still work.
 
 Speaker notes live in the `SPEAKER_NOTES` array near the end of `index.html`, keyed by each slide's `data-slide-id`. Planned timing is 8.5 minutes for a 10-minute slot.
 

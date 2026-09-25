@@ -1277,6 +1277,16 @@
   .slide.dark .swiss-img-caption{color:rgba(250,250,248,.62);border-top-color:rgba(250,250,248,.18)}
   .slide.dark .swiss-img-caption strong{color:var(--paper)}
   .evidence-grid .swiss-img-caption{flex-direction:column;gap:.6vh}
+
+  /* Q&A: QR to the talk page (same pattern as the other decks) */
+  .qa-side{display:flex;flex-direction:column;gap:3.6vh;padding-top:1.2vw}
+  .qa-qr{margin:0;display:flex;flex-direction:column;gap:2vh}
+  .qa-qr img{width:min(17vw,30vh);height:min(17vw,30vh);display:block;image-rendering:pixelated}
+  .qa-qr figcaption{display:flex;flex-direction:column;gap:1vh;padding-bottom:.4vh}
+  .qa-qr .t-meta{text-transform:none;letter-spacing:.04em;color:var(--text-secondary)}
+
+  /* Keyboard shortcuts stay active; the on-screen hint is hidden on stage */
+  #hint{display:none!important}
 </style>
 </head>
 <body class="canvas-mode">
@@ -1645,7 +1655,16 @@
         <div class="t-cat">Your turn</div>
         <div style="font-family:var(--sans);font-weight:200;font-size:min(12vw,20vh);line-height:.9;letter-spacing:-.05em">Questions?</div>
       </div>
-      <p class="t-body" style="padding-top:1.2vw;color:var(--text-secondary)">Ask me about the Tech in Asia rebuild, running Flutter in production, or working day to day with AI agents.</p>
+      <div data-anim="qr" class="qa-side">
+        <p class="t-body" style="color:var(--text-secondary)">Ask me about the Tech in Asia rebuild, running Flutter in production, or working day to day with AI agents.</p>
+        <figure class="qa-qr">
+          <img src="images/10-qr-talk.svg" data-image-slot="qa-qr" alt="QR code to laam.my.id/talks/are-mobile-developers-disappearing: slides and contact">
+          <figcaption>
+            <span class="t-cat">Slides + connect</span>
+            <span class="t-meta">laam.my.id/talks/are-mobile-developers-disappearing</span>
+          </figcaption>
+        </figure>
+      </div>
     </div>
     <div data-anim="up" class="ink-banner">
       <div style="font-family:var(--sans);font-weight:300;font-size:min(2.6vw,4.6vh);letter-spacing:-.02em">Thank you.</div>
